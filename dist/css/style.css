@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "Champagne & Limousines";
   src: url("../fonts/ChampagneLimousines.woff2") format("woff2"), url("../fonts/ChampagneLimousines.woff") format("woff");
@@ -345,6 +347,48 @@ body {
   color: #EFD2C2;
 }
 
+.slider {
+  padding-top: 100px;
+}
+
+.slider__title {
+  font-family: var(--font);
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.slick__card {
+  max-width: 260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slick__card__card-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.slick__card__card-title {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: var(--font);
+  color: #000000;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.slick__card__card-sale {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  font-family: var(--font);
+  color: #000000;
+}
+
 .footer {
   padding-top: 100px;
   background: #E5E5E5;
@@ -382,6 +426,180 @@ body {
   margin-right: 50px;
 }
 
+/* Слайдер */
+
+.slick-slider {
+  position: relative;
+}
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+/* Лента слайдов */
+
+/* Слайд */
+
+.slick-slide {
+  margin-right: 0.4%;
+}
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+.slick-arrow.slick-prev {
+  background-image: url("../img/prev.svg");
+  position: absolute;
+  top: 30%;
+  left: 0.2%;
+  z-index: 10;
+  width: 20px;
+  height: 40px;
+  background: transparent;
+  font-size: 0;
+  border: none;
+}
+
+/* Стрелка вправо */
+
+.slick-arrow.slick-next {
+  background-image: url("../img/next.svg");
+  position: absolute;
+  top: 30%;
+  right: -0.9%;
+  z-index: 10;
+  width: 20px;
+  height: 40px;
+  background: transparent;
+  font-size: 0;
+  border: none;
+}
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-left: 35px;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  margin-right: 0.4%;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 @media (min-width: 375px) {
   .header__body-btn {
     margin-bottom: calc(12.1% + 71px);
@@ -415,6 +633,11 @@ body {
     background: #2D3538;
     opacity: 0.7;
     z-index: 1;
+  }
+
+  .slick__card .slick__card {
+    max-width: 290px;
+    width: 100%;
   }
 
   .footer .footer__item {
@@ -670,6 +893,13 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .slick__card .slick__card {
+    max-width: 380px;
+    width: 100%;
+  }
+}
+
 @media (min-width: 1200px) {
   .gallery .gallery__text {
     position: absolute;
@@ -704,6 +934,8 @@ body {
 }
 @supports (-webkit-appearance:none){
 .header{background:url("../img/bg_mobile.png")}
+.slick-arrow.slick-prev{background-image:url("../img/prev.svg")}
+.slick-arrow.slick-next{background-image:url("../img/next.svg")}
 }
 
  @media (min-width: 375px){
@@ -726,6 +958,14 @@ body {
 
 @supports (-webkit-appearance:none){
 .header{background:url("../img/bg.png")}
+}
+
+}
+
+ @media (min-width: 1024px){
+
+@supports (-webkit-appearance:none){
+
 }
 
 }

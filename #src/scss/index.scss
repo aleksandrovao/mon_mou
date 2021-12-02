@@ -104,3 +104,50 @@
             }
     }
 }
+.slider{
+    padding-top: 100px;
+    &__title{
+        font-family: var(--font);
+        font-size: 30px;
+        line-height: 35px;
+        color:#000000;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+.slick__card{
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    &__card-img{
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    &__card-title{
+        font-size: 16px;
+        line-height: 18px;
+        font-family: var(--font);
+        color:#000000;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    &__card-sale{
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 400;
+        font-family: var(--font);
+        color:#000000;
+    }
+    @media(min-width: 768px){
+        .slick__card{
+            max-width: 290px;
+            width: 100%;
+        }
+    }
+    @media(min-width: 1024px){
+        .slick__card{
+            max-width: 380px;
+            width: 100%;
+        }
+    }
+}
