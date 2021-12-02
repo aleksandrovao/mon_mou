@@ -11,15 +11,27 @@
 <body>
     
     @@include("_header.html")
-<div class="container">
-    <div class="row">
-    <p class="col-6">
-        hello
-    </p>
-    <p class="col-6">
-        bootstrap
-    </p>
-</div>
+
+   <section class="gallery">
+    <div class="container">
+       <div class="gallery__inner">
+           <div class="gallery__inner-card">
+           <img src="img/index1.png" alt="" class="gallery__inner-img">
+           <p class="gallery__text">
+            ПОЛОТЕНЦЕ С НАТУРАЛЬНЫМ ШЕЛКОМ
+           </p>
+        </div>
+        <div class="gallery__inner-card">
+           <img src="img/index2.png" alt="" class="gallery__inner-img">
+           <p class="gallery__text">
+            ПОЛОТЕНЦЕ С НАТУРАЛЬНЫМ ШЕЛКОМ
+           </p>
+        </div>
+    </div>
+       <img src="img/index3.png" alt="" class="gallery__img">
+       <img src="img/index3_mobile.png" alt="" class="gallery__img-mobile">
+   </section>
+
 </div>
     @@include("_footer.html")
     <script src="js/jquery.js"></script>
