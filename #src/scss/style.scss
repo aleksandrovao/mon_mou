@@ -8,6 +8,10 @@
     font-style: #{$style};
     }
     }
+    .wrapper{
+        overflow-x: hidden;
+        position: relative;
+    }
 @import 'fonts';
 @import 'reset';
 @import 'global';

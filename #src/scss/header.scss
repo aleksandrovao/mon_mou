@@ -1,6 +1,7 @@
 .header{
     background: url('../img/bg_mobile.png') center;
     height: calc(100vh + 70px);
+   background-size: cover;
     position: relative;
     &__content{
         display: none;
@@ -93,10 +94,29 @@
     &__button{
         display: none;
     }
+    .search{
+        z-index: 10;
+        background-color: #EFD2C2;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 5px;
+        height: 20px;
+        width: 0;
+        opacity: 0;
+        transition: .3s;
+    }
+    .active{
+        opacity: 1;
+        max-width: 150px;
+        width: 100%;
+        transition: .3s;
+      }
 }
 
 .aside{
-    position: fixed;
+    position: absolute;
+    z-index: 0;
     padding-top: 15px;
     transition: .5s;
     background-color: #fff;
@@ -105,6 +125,7 @@
     top: 0;
     bottom: 0;
     transform: translateX(100%);
+    
     &__button{
         display: flex;
         justify-content: space-between;
@@ -151,8 +172,11 @@
   }
 }
 .aside--close{
+    z-index: 1;
+    transition: .6s;
     transform: translateX(0);
-    transition: .5s;
+    
+    
 }
 
 
@@ -340,4 +364,22 @@
         transform: scale(1.1);
         transition: .3s;
     }
+    .search{
+        z-index: 10;
+        background-color: #EFD2C2;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 5px;
+        height: 20px;
+        width: 0;
+        opacity: 0;
+        transition: .3s;
+    }
+    .active{
+        opacity: 1;
+        max-width: 150px;
+        width: 100%;
+        transition: .3s;
+      }
 }
