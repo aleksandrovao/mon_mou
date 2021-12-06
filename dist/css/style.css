@@ -582,6 +582,14 @@ body {
   right: 50%;
 }
 
+.tabs {
+  display: none;
+}
+
+.tabs--active {
+  display: block;
+}
+
 .tabs__inner:last-child {
   display: none;
 }

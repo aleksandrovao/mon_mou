@@ -62,3 +62,12 @@ content.click(function(){
         tel.css({'display':'block'})
     }, 500)
 })
+
+// tabs
+
+$('.tags__inner-title').click(function(e){
+    e.preventDefault();
+    $('.tabs').hide('tabs')
+    // $('tabs--active').hide()
+    $($(this).attr('href')).show('tabs')
+})
