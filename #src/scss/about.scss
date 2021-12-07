@@ -1,0 +1,114 @@
+.header__about{
+    height: 105px;
+   background-size: cover;
+    position: relative;
+    &__content{
+        display: none;
+    }
+    &__list{
+        display: none;
+    }
+    &__top-tel{
+        display: none;
+    }
+    &__top-inner{
+        display: flex;
+        padding-top: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75%;
+    }
+    &__top-btn{
+        background: transparent;
+        border: none;
+    }
+   
+    &__top-link{
+        margin-right: 10%;
+        margin-left: 18%;   
+    }
+    .search{
+        z-index: 10;
+        background-color: #EFD2C2;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 5px;
+        height: 20px;
+        width: 0;
+        opacity: 0;
+        transition: .3s;
+    }
+    .active{
+        opacity: 1;
+        max-width: 150px;
+        width: 100%;
+        transition: .3s;
+      }
+}
+.main{
+    &__inner:first-child{
+        transform: translateY(12%);
+    }
+    &__inner-card{
+        max-width: 300px;
+        width: 100%;
+        transform: translateY(-10%);
+        z-index: 10;
+    }
+    &__inner-img{
+        // margin-bottom: 239px;
+    }
+    &__card-text{
+        background-color: #fff;
+        // margin-bottom: 318px;
+        font-family: var(--font);
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #000000;
+        padding: 22px;
+        
+    }
+   
+}
+@media(min-width: 768px){
+    .main__inner{
+     display: flex;
+    }
+    .main__inner:last-child .main__inner-card{
+        order: -1;
+    }
+    .main__inner-card{
+        max-width: 700px;
+         width: 100%;
+    }
+}
+@media(min-width: 920px){
+    .main{
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+ .main__inner{
+  display: flex;
+ }
+ .main__inner:last-child .main__inner-card{
+     order: -1;
+ }
+ .main__inner-card{
+     max-width: 737px;
+     width: 100%;
+ }
+ .main__inner:first-child{
+     transform: translateX(12%);
+     margin-bottom: 100px;
+ }
+ .main__inner:last-child .main__inner-card{
+     transform: translateX(7%);
+     z-index: 10;
+ }
+ .main__inner-card{
+     transform: translateX(-10%);
+     z-index: 10;
+ }
+}

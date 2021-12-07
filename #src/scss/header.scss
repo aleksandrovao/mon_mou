@@ -170,6 +170,24 @@
     background: transparent;
     border: none;
   }
+  .search{
+    z-index: 10;
+    background-color: #EFD2C2;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 5px;
+    height: 20px;
+    width: 0;
+    opacity: 0;
+    transition: .3s;
+}
+.active{
+    opacity: 1;
+    max-width: 150px;
+    width: 100%;
+    transition: .3s;
+  }
 }
 .aside--close{
     z-index: 1;
