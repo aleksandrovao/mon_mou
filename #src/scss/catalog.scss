@@ -1,0 +1,143 @@
+.header__about{
+    height: 105px;
+   background-size: cover;
+    position: relative;
+    &__content{
+        display: none;
+    }
+    &__list{
+        display: none;
+    }
+    &__top-tel{
+        display: none;
+    }
+    &__top-inner{
+        display: flex;
+        padding-top: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75%;
+    }
+    &__top-btn{
+        background: transparent;
+        border: none;
+    }
+   
+    &__top-link{
+        margin-right: 10%;
+        margin-left: 18%;   
+    }
+    .search{
+        z-index: 10;
+        background-color: #EFD2C2;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px 5px;
+        height: 20px;
+        width: 0;
+        opacity: 0;
+        transition: .3s;
+    }
+    .active{
+        opacity: 1;
+        max-width: 150px;
+        width: 100%;
+        transition: .3s;
+      }
+}
+.tab{
+    &__link{
+        display: block;
+    font-size: 13px;
+    line-height: 15px;
+    font-family: var(--font);
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #000;
+    }
+    &__card-img{
+        margin-bottom: 35px;
+    }
+    &__card-title{
+        font-size: 18px;
+        line-height: 21px;
+        font-family: var(--font);
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    &__card-sale{
+        font-size: 25px;
+        line-height: 28px;
+        font-family: var(--font);
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+}
+@media(min-width: 768px){
+    .tab__item{
+        display: flex;
+        justify-content: center;
+    }
+    .tab__card:first-child{
+        margin-right: 30px;
+    }
+}
+.tab__link{
+    position: relative;
+    margin-left: 50px;
+}
+.tab--active{
+    transition: .5s;
+    position: relative;
+    margin-left: 190px;
+}
+.tab__link::before{
+    
+    position: absolute;
+    top: 4px;
+    left: -50px;
+    content: '';
+    height: 5px;
+    width: 40px;
+    background:#EFD2C2;
+    
+}
+.tab__link--active::before{
+    position: absolute;
+    top: 4px;
+    left: -190px;
+    content: '';
+    height: 5px;
+    width: 180px;
+    background:#EFD2C2;
+    transition: .5s;
+}
+// .tab__link::before{
+//     position: absolute;
+//     top: 4px;
+//     left: -50px;
+//     content: '';
+//     height: 5px;
+//     width: 40px;
+//     background:#EFD2C2;
+// }
+// .tab__link:focus::before{
+//     position: absolute;
+//     top: 4px;
+//     left: -190px;
+//     content: '';
+//     height: 5px;
+//     width: 180px;
+//     background:#EFD2C2;
+//     transition: .5s;
+// }
+// .tab__active:
+.tab__inner{
+    display: none;
+}
+.tab__active{
+    display: block;
+}

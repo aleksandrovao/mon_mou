@@ -10969,6 +10969,21 @@ $('.tags__inner-title').click(function(e){
     $('.tabs').hide('tabs')
     // $('tabs--active').hide()
     $($(this).attr('href')).show('tabs')
+})
+$('.tab__link').click(function(e){
+    e.preventDefault();
+    $('.tab__link').each(function(){
+        $('.tab__link').removeClass('tab__link--active')
+        $('.tab__link').removeClass('tab--active')
+    })
+   $(this).addClass('tab__link--active')
+   $(this).addClass('tab--active')
+    $('.tab__inner').hide('tab__inner')
+    $($(this).attr('href')).show('tabs')
+    
+        
+
+    // $($(this).attr('href')).addClass('tab__link--active')
 });
 
 // ("bootstrap.bundle.js");
